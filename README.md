@@ -385,7 +385,7 @@ sleep(1);
 
 //Check an order's status.
 try {
-    $result=$binance->trade()->getOrder([
+    $result=$binance->user()->getOrder([
         'symbol'=>'BTCUSDT',
         'orderId'=>$result['orderId'],
         'origClientOrderId'=>$result['clientOrderId'],
